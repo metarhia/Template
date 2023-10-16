@@ -1,2 +1,1 @@
-# Template
-Metarhia application minimal template 🔵
+# Metarhia application minimal template 🔵

@@ -1,0 +1,41 @@
+{
+  "name": "Template application",
+  "version": "3.0.0",
+  "author": "Timur Shemsedinov <timur.shemsedinov@gmail.com>",
+  "description": "Metarhia application minimal template",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/metarhia/Template"
+  },
+  "bugs": {
+    "url": "https://github.com/metarhia/Template/issues"
+  },
+  "homepage": "https://github.com/metarhia/Template",
+  "main": "server.js",
+  "types": "types/global.d.ts",
+  "scripts": {
+    "test": "npm run lint && npm run types && MODE=test node server.js",
+    "dotest": "npm run lint && npm run types && node server.js",
+    "types": "tsc",
+    "lint": "eslint . && prettier -c \"**/*.js\" \"**/*.json\" \"**/*.md\" \"**/*.yml\" \"**/*.ts\"",
+    "fmt": "prettier --write \"**/*.js\" \"**/*.json\" \"**/*.md\" \"**/*.yml\" \"**/*.ts\""
+  },
+  "engines": {
+    "node": "18 || 20"
+  },
+  "devDependencies": {
+    "@types/node": "^20.5.0",
+    "@types/ws": "^8.5.5",
+    "eslint": "^8.47.0",
+    "eslint-config-metarhia": "^8.2.1",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-import": "^2.28.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "prettier": "^3.0.2",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "impress": "^3.0.11"
+  }
+}
